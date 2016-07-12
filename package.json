@@ -1,0 +1,26 @@
+{
+  "name": "x",
+  "version": "0.0.0",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "engine-strict": true,
+  "scripts": {
+    "lint": "eslint .",
+    "ava": "ava src/test/**/*.spec.js",
+    "watch": "npm run ava -- --watch ",
+    "check": "npm-check -u",
+    "test": "npm run lint && npm run ava"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "0.15.2",
+    "babel-eslint": "6.1.2",
+    "eslint": "3.0.1",
+    "eslint-config-standard": "5.3.5",
+    "eslint-plugin-promise": "1.3.2",
+    "eslint-plugin-standard": "2.0.0",
+    "npm-check": "5.2.2"
+  }
+}
